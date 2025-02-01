@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <h1>Hi, I'm SIVA BHARGAVI</h1>
+    <p>Aspiring for the software developer</p>
+    <button onclick="scrollToSection('contact')">Get in Touch</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am a Trainee in besant techmologies and i am passionate about python developer.</p>
+    <p>Skills: Python,django, HTML, CSS, JavaScript </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>My Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>Tkinter Calender</h3>
+        <p> Fetching calender:  Fetch the calender by entering the year using Tkinter.  
+            Detailed Information: Displays  the calender of particular given year by entering a what year we want. .</p>
+       <!-- <a href="#" target="_blank">Live Demo</a>-->
+      </div>
+      <div class="project-card">
+        <h3> PhishGuard URL</h3>
+        <p> Objective  : The primary objective of an phish guard url system is to accurately identify the fake websites in social media. 
+            Predicted Results : The classification of a particular model predicts the which website is fake by giving phishing or 
+                                legitimate.</p>
+        <!--<a href="#" target="_blank">Live Demo</a>-->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy;  THANK YOU  </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
